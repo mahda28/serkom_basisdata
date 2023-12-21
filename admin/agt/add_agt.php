@@ -64,8 +64,8 @@ $format = "A"."00".$tambah;
 						</div>
 
 						<div class="form-group">
-							<label>Kelas</label>
-							<input type="text" name="kelas" id="kelas" class="form-control" placeholder="Kelas">
+							<label>Alamat</label>
+							<input type="text" name="alamat" id="alamat" class="form-control" placeholder="alamat">
 						</div>
 
 						<div class="form-group">

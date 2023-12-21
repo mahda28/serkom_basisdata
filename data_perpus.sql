@@ -56,7 +56,7 @@ CREATE TABLE `tb_anggota` (
   `id_anggota` varchar(10) NOT NULL,
   `nama` varchar(20) NOT NULL,
   `jekel` enum('Laki-laki','Perempuan') NOT NULL,
-  `kelas` varchar(50) NOT NULL,
+  `alamat` varchar(50) NOT NULL,
   `no_hp` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -64,7 +64,7 @@ CREATE TABLE `tb_anggota` (
 -- Dumping data untuk tabel `tb_anggota`
 --
 
-INSERT INTO `tb_anggota` (`id_anggota`, `nama`, `jekel`, `kelas`, `no_hp`) VALUES
+INSERT INTO `tb_anggota` (`id_anggota`, `nama`, `jekel`, `alamat`, `no_hp`) VALUES
 ('A001', 'Ana', 'Perempuan', 'juwana', '089987789000'),
 ('A002', 'Bagus', 'Laki-laki', 'demak', '089987789098'),
 ('A003', 'Citra', 'Perempuan', 'demak', '085878526048'),
