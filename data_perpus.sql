@@ -28,6 +28,9 @@ SET time_zone = "+00:00";
 -- Struktur dari tabel `log_pinjam`
 --
 
+
+
+
 CREATE TABLE `log_pinjam` (
   `id_log` int(11) NOT NULL,
   `id_buku` varchar(10) NOT NULL,
@@ -216,6 +219,22 @@ ALTER TABLE `tb_sirkulasi`
   ADD CONSTRAINT `tb_sirkulasi_ibfk_1` FOREIGN KEY (`id_buku`) REFERENCES `tb_buku` (`id_buku`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `tb_sirkulasi_ibfk_2` FOREIGN KEY (`id_anggota`) REFERENCES `tb_anggota` (`id_anggota`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
+
+
+-- Trigger untuk memantau penambahan data pada tb_pinjaman
+CREATE TRIGGER tr_monitor_pinjaman
+AFTER INSERT ON log_pinjam
+FOR EACH ROW
+BEGIN
+    -- Log ke tabel sirkulasi atau lakukan operasi lain sesuai kebutuhan
+    INSERT INTO tb_sirkulasi (anggota_id, buku_id, tgl_pinjam)
+    VALUES (NEW.anggota_id, NEW.buku_id, NOW());
+END;
+
+
+
+
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
