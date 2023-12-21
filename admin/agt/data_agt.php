@@ -6,7 +6,7 @@
 		<li>
 			<a href="index.php">
 				<i class="fa fa-home"></i>
-				<b>Si Perpustakaan</b>
+				<b>Si buBOOKs</b>
 			</a>
 		</li>
 	</ol>
@@ -30,7 +30,7 @@
 							<th>Id Anggota</th>
 							<th>Nama</th>
 							<th>JK</th>
-							<th>Kelas</th>
+							<th>Alamat</th>
 							<th>No HP</th>
 							<th>Kelola</th>
 						</tr>
@@ -57,7 +57,7 @@
 								<?php echo $data['jekel']; ?>
 							</td>
 							<td>
-								<?php echo $data['kelas']; ?>
+								<?php echo $data['alamat']; ?>
 							</td>
 							<td>
 								<?php echo $data['no_hp']; ?>

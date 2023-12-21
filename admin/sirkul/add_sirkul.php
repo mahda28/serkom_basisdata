@@ -9,16 +9,16 @@ $tambah = (int) $urut + 1;
 
 if (strlen($tambah) == 1){
 $format = "S"."00".$tambah;
- 	}else if (strlen($tambah) == 2){
+ 	}elseif (strlen($tambah) == 2){
  	$format = "S"."0".$tambah;
-			}else (strlen($tambah) == 3){
-			$format = "S".$tambah
-				}
+			}elseif(strlen($tambah) == 3){
+			$format = "S".$tambah;
+	}
 ?>
 
 <section class="content-header">
 	<h1>
-		Sirkulasi
+		Layanan
 		<small>Buku</small>
 	</h1>
 	<ol class="breadcrumb">
@@ -52,7 +52,7 @@ $format = "S"."00".$tambah;
 				<form action="" method="post" enctype="multipart/form-data">
 					<div class="box-body">
 						<div class="form-group">
-							<label>Id Sirkulasi</label>
+							<label>Id Layanan</label>
 							<input type="text" name="id_sk" id="id_sk" class="form-control"
 								value="<?php echo $format; ?>" readonly />
 						</div>

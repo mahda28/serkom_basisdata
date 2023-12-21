@@ -25,7 +25,7 @@ $format = "A"."00".$tambah;
 		<li>
 			<a href="index.php">
 				<i class="fa fa-home"></i>
-				<b>Si Perpustakaan</b>
+				<b>Si buBOOKs</b>
 			</a>
 		</li>
 	</ol>
@@ -89,11 +89,11 @@ $format = "A"."00".$tambah;
 
     if (isset ($_POST['Simpan'])){
     
-        $sql_simpan = "INSERT INTO tb_anggota (id_anggota,nama,jekel,kelas,no_hp) VALUES (
+        $sql_simpan = "INSERT INTO tb_anggota (id_anggota,nama,jekel,alamat,no_hp) VALUES (
            '".$_POST['id_anggota']."',
           '".$_POST['nama']."',
           '".$_POST['jekel']."',
-          '".$_POST['kelas']."',
+          '".$_POST['alamat']."',
           '".$_POST['no_hp']."')";
         $query_simpan = mysqli_query($koneksi, $sql_simpan);
         mysqli_close($koneksi);

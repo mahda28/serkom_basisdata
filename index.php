@@ -20,7 +20,7 @@ include "inc/koneksi.php";
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SI PERPUSTAKAAN</title>
+	<title>SI buBOOKs</title>
 	<link rel="icon" href="dist/img/logo.png">
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -52,7 +52,7 @@ include "inc/koneksi.php";
 			<a href="index.php" class="logo">
 				<span class="logo-lg">
 					<img src="dist/img/logo.png" width="37px">
-					<b>E-Library</b>
+					<b>buBOOKs</b>
 				</span>
 			</a>
 			<!-- Header Navbar: style can be found in header.less -->
@@ -72,7 +72,7 @@ include "inc/koneksi.php";
 							<a class="dropdown-toggle">
 								<span>
 									<b>
-										Sistem Informasi Perpustakaan Berbasis Web V 1.0
+										Si buBOOKs
 									</b>
 								</span>
 							</a>
@@ -126,7 +126,7 @@ include "inc/koneksi.php";
 						<li class="treeview">
 							<a href="#">
 								<i class="fa fa-folder"></i>
-								<span>Kelola Data</span>
+								<span>Manage Data</span>
 								<span class="pull-right-container">
 									<i class="fa fa-angle-left pull-right"></i>
 								</span>
@@ -147,7 +147,7 @@ include "inc/koneksi.php";
 						<li class="treeview">
 							<a href="?page=data_sirkul">
 								<i class="fa fa-refresh"></i>
-								<span>Sirkulasi</span>
+								<span>Layanan</span>
 								<span class="pull-right-container">
 								</span>
 							</a>
@@ -186,7 +186,7 @@ include "inc/koneksi.php";
 							<ul class="treeview-menu">
 								<li>
 									<a href="?page=laporan_sirkulasi">
-										<i class="fa fa-file"></i>Laporan Sirkulasi</a>
+										<i class="fa fa-file"></i>Laporan Layanan</a>
 								</li>
 							</ul>
 						</li>
@@ -221,7 +221,7 @@ include "inc/koneksi.php";
 						<li class="treeview">
 							<a href="#">
 								<i class="fa fa-folder"></i>
-								<span>Kelola Data</span>
+								<span>Manage Data</span>
 								<span class="pull-right-container">
 									<i class="fa fa-angle-left pull-right"></i>
 								</span>
@@ -242,7 +242,7 @@ include "inc/koneksi.php";
 						<li class="treeview">
 							<a href="?page=data_sirkul">
 								<i class="fa fa-refresh"></i>
-								<span>Sirkulasi</span>
+								<span>Layanan</span>
 								<span class="pull-right-container">
 								</span>
 							</a>
@@ -282,7 +282,7 @@ include "inc/koneksi.php";
 
 								<li>
 									<a href="?page=laporan_sirkulasi">
-										<i class="fa fa-file"></i>Laporan Sirkulasi</a>
+										<i class="fa fa-file"></i>Laporan Layanan</a>
 								</li>
 							</ul>
 						</li>

@@ -16,7 +16,7 @@
 		<li>
 			<a href="index.php">
 				<i class="fa fa-home"></i>
-				<b>Si Perpustakaan</b>
+				<b>Si buBOOKs</b>
 			</a>
 		</li>
 	</ol>
@@ -63,8 +63,8 @@
 						</div>
 
 						<div class="form-group">
-							<label>Kelas</label>
-							<input type='text' class="form-control" name="kelas" value="<?php echo $data_cek['kelas']; ?>"
+							<label>Alamat</label>
+							<input type='text' class="form-control" name="alamat" value="<?php echo $data_cek['alamat']; ?>"
 							/>
 						</div>
 
@@ -93,7 +93,7 @@ if (isset ($_POST['Ubah'])){
     $sql_ubah = "UPDATE tb_anggota SET
 		nama='".$_POST['nama']."',
 		jekel='".$_POST['jekel']."',
-		kelas='".$_POST['kelas']."',
+		alamat='".$_POST['alamat']."',
         no_hp='".$_POST['no_hp']."'
         WHERE id_anggota='".$_POST['id_anggota']."'";
     $query_ubah = mysqli_query($koneksi, $sql_ubah);

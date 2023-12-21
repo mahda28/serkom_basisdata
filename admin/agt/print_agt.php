@@ -66,7 +66,7 @@ error_reporting(0);
             <page size="A4">
 				<div class="panel panel-default">
 					<div class="panel-body bg-primary">
-						<h4 class="text-center">KARTU ANGGOTA PERPUSTAKAAN</h4>
+						<h4 class="text-center">KARTU ANGGOTA buBOOKs</h4>
 						<br/>
 						<div class="row">
 							<div class="col-sm-8">

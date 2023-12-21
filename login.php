@@ -10,7 +10,7 @@ include "inc/koneksi.php";
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Login | SI Perpustakaan</title>
+	<title>Login | buBOOKs </title>
 	<link rel="icon" href="dist/img/logo.png">
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -36,7 +36,7 @@ include "inc/koneksi.php";
 		<div class="login-logo">
 			<h3>
 				<font color="green">
-					<b>Sistem Informasi Perpustakaan</b>
+					<b>Sistem Informasi Peminjaman buBOOKs</b>
 				</font>
 			</h3>
 			</a>
@@ -47,7 +47,7 @@ include "inc/koneksi.php";
 				<img src="dist/img/logo.png" width=160px />
 			</center>
 			<br>
-			<p class="login-box-msg">Login System</p>
+			<p class="login-box-msg">Login</p>
 			<form action="#" method="post">
 				<div class="form-group has-feedback">
 					<input type="text" class="form-control" name="username" placeholder="Username" required>

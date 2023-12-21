@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="assets_style/assets/bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet"
         href="assets_style/assets/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css>">
-    <title>Laporan Perpustakaan - Laporan Sirkulasi</title>
+    <title>Laporan Layanan buBOOKs</title>
 </head>
 
 <body onload="window.print()" style="font-family: Quicksand, sans-serif;">
     <h3 class='text-center' style='font-family: Quicksand, sans-serif; margin-top: 30px;'>
-        .:: Laporan Perpustakaan ::.
+        .:: Laporan buBOOKs::.
     </h3>
-    <h4 class='text-center'>Laporan Sirkulasi</h4>
+    <h4 class='text-center'>Laporan Layanan</h4>
     <?php
     // Load file koneksi.php
     include "inc/koneksi.php";

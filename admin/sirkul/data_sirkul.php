@@ -1,6 +1,6 @@
 <section class="content-header">
 	<h1>
-		Sirkulasi
+		Layanan
 		<small>Buku</small>
 	</h1>
 	<ol class="breadcrumb">

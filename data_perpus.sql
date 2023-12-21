@@ -32,6 +32,7 @@ CREATE TABLE `log_pinjam` (
   `id_log` int(11) NOT NULL,
   `id_buku` varchar(10) NOT NULL,
   `id_anggota` varchar(10) NOT NULL,
+  `nama` varchar(20) NOT NULL,
   `tgl_pinjam` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -39,11 +40,11 @@ CREATE TABLE `log_pinjam` (
 -- Dumping data untuk tabel `log_pinjam`
 --
 
-INSERT INTO `log_pinjam` (`id_log`, `id_buku`, `id_anggota`, `tgl_pinjam`) VALUES
-(1, 'B001', 'A001', '2020-06-23'),
-(2, 'B002', 'A001', '2020-06-25'),
-(3, 'B003', 'A002', '2020-06-01'),
-(4, 'B002', 'A005', '2020-06-23');
+INSERT INTO `log_pinjam` (`id_log`, `id_buku`, `id_anggota`, `nama`,`tgl_pinjam`) VALUES
+(1, 'B001', 'A001','Ana', '2020-06-23'),
+(2, 'B002', 'A001', 'Ana','2020-06-25'),
+(3, 'B003', 'A002', 'Bagus','2020-06-01'),
+(4, 'B002', 'A005', 'Edi','2020-06-23');
 
 -- --------------------------------------------------------
 
@@ -153,6 +154,7 @@ ALTER TABLE `log_pinjam`
   ADD PRIMARY KEY (`id_log`),
   ADD KEY `id_anggota` (`id_anggota`),
   ADD KEY `id_buku` (`id_buku`);
+  ADD KEY `nama` (`nama`);
 
 --
 -- Indeks untuk tabel `tb_anggota`

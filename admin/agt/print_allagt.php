@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="assets_style/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets_style/assets/bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets_style/assets/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css>">
-		<title>Laporan Perpustakaan - Data Anggota</title>
+		<title>Laporan  - Data Anggota</title>
 	</head>
 	<body onload="window.print()" style="font-family: Quicksand, sans-serif;">
     <h3 class='text-center' style='font-family: Quicksand, sans-serif; margin-top: 30px;'>
