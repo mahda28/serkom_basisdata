@@ -13,7 +13,7 @@
 	</head>
 	<body onload="window.print()" style="font-family: Quicksand, sans-serif;">
     <h3 class='text-center' style='font-family: Quicksand, sans-serif; margin-top: 30px;'>
-        .:: Laporan Perpustakaan ::.
+        .:: Laporan buBOOKS ::.
     </h3>
     <h4 class='text-center'>Data Anggota</h4>
     <?php
