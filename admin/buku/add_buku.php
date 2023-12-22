@@ -80,6 +80,9 @@ $format = "B"."00".$tambah;
 <?php
 
     if (isset ($_POST['Simpan'])){
+   // Start a transaction
+
+		$koneksi -> autocommit(false);
     
         $sql_simpan = "INSERT INTO tb_buku (id_buku,judul_buku,pengarang,penerbit,th_terbit) VALUES (
            '".$_POST['id_buku']."',
@@ -88,25 +91,27 @@ $format = "B"."00".$tambah;
           '".$_POST['penerbit']."',
           '".$_POST['th_terbit']."')";
         $query_simpan = mysqli_query($koneksi, $sql_simpan);
-        mysqli_close($koneksi);
+
 
     if ($query_simpan){
+        // Commit the transaction
+        $koneksi->commit();
 
-      echo "<script>
-      Swal.fire({title: 'Tambah Data Berhasil',text: '',icon: 'success',confirmButtonText: 'OK'
-      }).then((result) => {
-          if (result.value) {
-              window.location = 'index.php?page=MyApp/data_buku';
-          }
-      })</script>";
+
+        echo "<script>
+        Swal.fire({title: 'Tambah Data Berhasil', text: '', icon: 'success', confirmButtonText: 'OK'});
+        </script>";
       }else{
-      echo "<script>
-      Swal.fire({title: 'Tambah Data Gagal',text: '',icon: 'error',confirmButtonText: 'OK'
-      }).then((result) => {
-          if (result.value) {
-              window.location = 'index.php?page=MyApp/add_buku';
-          }
-      })</script>";
+    // Rollback the transaction if an error occurred
+		$koneksi->rollback();
+
+        echo "<script>
+        Swal.fire({title: 'Tambah Data Gagal', text: '', icon: 'error', confirmButtonText: 'OK'});
+        </script>";
     }
-  }
-    
+	    // Restore autocommit to true
+		$koneksi->autocommit(true);
+	}
+	
+	// Close the database connection outside the if statement
+	$koneksi->close();

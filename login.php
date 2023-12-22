@@ -36,7 +36,7 @@ include "inc/koneksi.php";
 		<div class="login-logo">
 			<h3>
 				<font color="green">
-					<b>Sistem Informasi Peminjaman buBOOKs</b>
+					<b>Sistem Informasi  buBOOKs</b>
 				</font>
 			</h3>
 			</a>
