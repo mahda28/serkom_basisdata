@@ -43,7 +43,7 @@ include "inc/koneksi.php";
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </head>
 
-<body class="hold-transition skin-green sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini">
 	<!-- Site wrapper -->
 	<div class="wrapper">
 
