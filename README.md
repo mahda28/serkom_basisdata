@@ -1,4 +1,4 @@
-# E-Library
+# buBOOKs
 Aplikasi Perpustakaan Berbasis Website
 
 * Tampilan Login
